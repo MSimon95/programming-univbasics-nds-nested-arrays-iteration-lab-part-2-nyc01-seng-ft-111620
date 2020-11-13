@@ -9,11 +9,11 @@ while row_index < src.count do
   while element_index < spice_rack[row_index].count do
 
     if src[row_index][element_index].min > min_num.min
-      longest_string_element = spice_rack[row_index][element_index]
+      min_num = src[row_index][element_index]
     end
     element_index += 1
   end
-  outer_results << longest_string_element
+  outer_results << min_num
   row_index += 1
 end
  
